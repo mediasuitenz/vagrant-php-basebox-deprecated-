@@ -1,0 +1,17 @@
+# Class: vim
+#   This module manages vim
+#
+# Definition:
+#   -
+#
+# Parameters:
+#   -
+#
+# Actions:
+#   Installs the vimrc
+#
+# Requires:
+#   -
+#
+# Sample Usage:
+#   -

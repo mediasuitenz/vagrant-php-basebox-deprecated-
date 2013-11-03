@@ -1,0 +1,20 @@
+# ************************************
+# Vhost template in module apache2
+# Managed by Puppet
+# ************************************
+
+<VirtualHost *:443>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/vhosts
+
+  SSLEngine on
+  SSLCertificateFile    /etc/ssl/certs/ssl-cert-snakeoil.pem
+  SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key
+
+  ErrorLog  /var/log/apache2/default-ssl-error_log
+  CustomLog /var/log/apache2/default-ssl-access_log common
+
+  <Directory /var/www/vhosts>
+    AllowOverride All
+  </Directory>
+</VirtualHost>

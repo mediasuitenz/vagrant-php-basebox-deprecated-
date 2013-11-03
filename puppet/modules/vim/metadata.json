@@ -1,0 +1,24 @@
+{
+  "name": "dhoppe-vim",
+  "author": "Dennis Hoppe",
+  "description": "VIM Module for Debian, Ubuntu",
+  "license": "GPLv2",
+  "project_page": "http://github.com/dhoppe/puppet-vim",
+  "source": "git://github.com/dhoppe/puppet-vim",
+  "summary": "VIM Module",
+  "version": "0.0.11",
+  "checksums": {
+    "Modulefile": "ae0c7b888311e7d144ce4fb67d0a1a6f",
+    "README": "0c4ee91172c726ff3559d66781dbad96",
+    "files/lenny/etc/vim/vimrc": "2356d09788099a6a0f67ccc55065233c",
+    "files/maverick/etc/vim/vimrc": "ec72d29c3cecec9c0e295aaa399a57ea",
+    "files/natty/etc/vim/vimrc": "3e84a6bea0e2b1adbea8442c1dc2b7f1",
+    "files/squeeze/etc/vim/vimrc": "cb5b6d82918ef889825c70a036174cf0",
+    "manifests/init.pp": "e24e6d4d2871586defa964babfe48ccd",
+    "manifests/params.pp": "9a0ae5275a7020c309f6eb607403a5fa",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "tests/init.pp": "b651e1a93505b3f5baf094fd19fdc663"
+  },
+  "dependencies": []
+}

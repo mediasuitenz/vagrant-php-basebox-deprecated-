@@ -1,0 +1,9 @@
+name 'dhoppe-vim'
+version '0.0.11'
+
+author 'Dennis Hoppe'
+license 'GPLv2'
+project_page 'http://github.com/dhoppe/puppet-vim'
+source 'git://github.com/dhoppe/puppet-vim'
+summary 'VIM Module'
+description 'VIM Module for Debian, Ubuntu'

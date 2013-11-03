@@ -1,0 +1,17 @@
+# ************************************
+# Vhost template in module apache2
+# Managed by Puppet
+# ************************************
+
+
+<VirtualHost *:80>
+  ServerAdmin webmaster@localhost
+  DocumentRoot /var/www/vhosts
+
+  ErrorLog  /var/log/apache2/default-error_log
+  CustomLog /var/log/apache2/default-access_log common
+
+  <Directory /var/www/vhosts>
+    AllowOverride All
+  </Directory>
+</VirtualHost>
