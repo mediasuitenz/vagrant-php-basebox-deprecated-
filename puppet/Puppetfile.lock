@@ -1,0 +1,14 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    dhoppe/vim (0.0.11)
+    puppetlabs/git (0.0.3)
+    puppetlabs/mysql (2.0.1)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/stdlib (4.1.0)
+
+DEPENDENCIES
+  dhoppe/vim (= 0.0.11)
+  puppetlabs/git (= 0.0.3)
+  puppetlabs/mysql (= 2.0.1)
+
