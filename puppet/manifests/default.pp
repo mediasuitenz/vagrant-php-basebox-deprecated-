@@ -32,7 +32,8 @@ class {'mysql::server':
   root_password => 'password',
   override_options => {
     mysqld => {
-      bind_address => '0.0.0.0'
+      bind_address => '0.0.0.0',
+      "skip-external-locking" => "false",
     }
   }
 }
@@ -40,20 +41,20 @@ class {'mysql::server':
 mysql::db { 'development':
   user     => 'user',
   password => 'password',
-  host     => 'localhost',
+  host     => '%',
   grant    => ['ALL '],
 }
 
 mysql::db { 'production':
   user     => 'user',
   password => 'password',
-  host     => 'localhost',
+  host     => '%',
   grant    => ['ALL'],
 }
 
 mysql::db { 'testing':
   user     => 'user',
   password => 'password',
-  host     => 'localhost',
+  host     => '%',
   grant    => ['ALL'],
 }
