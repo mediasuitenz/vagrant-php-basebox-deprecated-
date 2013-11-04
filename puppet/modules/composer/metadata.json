@@ -1,0 +1,28 @@
+{
+  "name": "willdurand-composer",
+  "version": "0.0.5",
+  "source": "UNKNOWN",
+  "author": "William Durand",
+  "license": "MIT",
+  "summary": "This module installs Composer, a dependency manager for PHP.",
+  "description": "This module installs Composer, a dependency manager for PHP.",
+  "project_page": "UNKNOWN",
+  "dependencies": [
+    {
+      "name": "maestrodev/wget"
+    }
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "LICENSE": "8e55fce2ff4cd1331f7c6bc602fe7370",
+    "Modulefile": "c2f377c231fc8e8825b13223e1123aa1",
+    "README.md": "71cf0b6ffa6b38a5e3d99e2e5702d75b",
+    "Rakefile": "a1a87b266213b03b33f5e006d4df7925",
+    "manifests/init.pp": "f0991dfec070ee55e21e77b0fc5c5e54",
+    "manifests/params.pp": "b76c6afd5ff070d7b27c13489511a46b",
+    "spec/classes/composer_spec.rb": "508a399efc16fecb0d680cb7de572e0c",
+    "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc"
+  }
+}

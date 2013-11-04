@@ -1,9 +1,19 @@
+# Puppet tools
+package { 'librarian-puppet':
+    ensure   => 'installed',
+    provider => 'gem',
+}
+
 
 # Version control
 include git
 
 # Editors
 package { "vim":
+  ensure => present,
+}
+
+package { "curl":
   ensure => present,
 }
 
@@ -14,6 +24,8 @@ file {'/var/www/vhosts':
 include apache2
 
 include php5
+include composer
+
 
 # Database
 class {'mysql::server':
@@ -29,19 +41,19 @@ mysql::db { 'development':
   user     => 'user',
   password => 'password',
   host     => 'localhost',
-  grant    => ['SELECT', 'UPDATE'],
+  grant    => ['ALL '],
 }
 
 mysql::db { 'production':
   user     => 'user',
   password => 'password',
   host     => 'localhost',
-  grant    => ['SELECT', 'UPDATE'],
+  grant    => ['ALL'],
 }
 
 mysql::db { 'testing':
   user     => 'user',
   password => 'password',
   host     => 'localhost',
-  grant    => ['SELECT', 'UPDATE'],
+  grant    => ['ALL'],
 }
