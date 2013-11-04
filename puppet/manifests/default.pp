@@ -37,6 +37,31 @@ class {'mysql::server':
     }
   }
 }
+->
+mysql_user { 'user@localhost':
+  ensure                   => 'present',
+  max_connections_per_hour => '0',
+  max_queries_per_hour     => '0',
+  max_updates_per_hour     => '0',
+  max_user_connections     => '0',
+  password_hash            => '*2470C0C06DEE42FD1618BB99005ADCA2EC9D1E19',
+}
+->
+mysql_grant { 'user@localhost/*.*':
+  ensure     => 'present',
+  options    => ['GRANT'],
+  privileges => ['ALL'],
+  table      => '*.*',
+  user       => 'user@localhost',
+}
+->
+mysql_grant { 'user@%/*.*':
+  ensure     => 'present',
+  options    => ['GRANT'],
+  privileges => ['ALL'],
+  table      => '*.*',
+  user       => 'user@%',
+}
 
 mysql::db { 'development':
   user     => 'user',
