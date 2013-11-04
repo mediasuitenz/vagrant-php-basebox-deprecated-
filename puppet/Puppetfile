@@ -10,6 +10,8 @@ mod 'willdurand/composer', '0.0.5'
 
 mod 'puppetlabs/mysql', '2.0.1'
 
+mod 'willdurand/nodejs', '1.5.1'
+
 # mod 'ntp',
 #   :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git'
 

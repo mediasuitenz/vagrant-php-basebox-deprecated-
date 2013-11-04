@@ -83,3 +83,18 @@ mysql::db { 'testing':
   host     => '%',
   grant    => ['ALL'],
 }
+
+# Install nodejs
+class { 'nodejs':
+  version => 'v0.10.15'
+}
+->
+exec { 'add nodemodules to path':
+  command => '/bin/bash -c \'echo "export PATH=$PATH:/usr/local/node/node-v0.10.15/bin" >> /home/vagrant/.bashrc\'',
+}
+
+# Install grunt globally
+package { 'grunt-cli':
+  provider => npm
+}
+

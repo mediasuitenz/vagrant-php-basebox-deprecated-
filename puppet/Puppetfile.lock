@@ -9,10 +9,14 @@ FORGE
     puppetlabs/stdlib (4.1.0)
     willdurand/composer (0.0.5)
       maestrodev/wget (>= 0.0.0)
+    willdurand/nodejs (1.5.1)
+      maestrodev/wget (>= 0.0.0)
+      puppetlabs/stdlib (>= 0.0.0)
 
 DEPENDENCIES
   dhoppe/vim (= 0.0.11)
   puppetlabs/git (= 0.0.3)
   puppetlabs/mysql (= 2.0.1)
   willdurand/composer (= 0.0.5)
+  willdurand/nodejs (= 1.5.1)
 
