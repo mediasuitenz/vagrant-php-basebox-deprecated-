@@ -1,0 +1,3 @@
+#!/bin/bash
+
+vagrant box add vagrant-php-basebox vagrant-php-basebox.box --provider virtualbox -f
