@@ -12,7 +12,7 @@ class apache2 {
   #   require => Package["apache2"]
   # }
 
-  exec {"a2enmod ssl": 
+  exec {"a2enmod ssl":
     command => "/usr/sbin/a2enmod ssl",
     require => Package["apache2"],
   }
@@ -20,6 +20,11 @@ class apache2 {
   service { "apache2":
     ensure => running,
     require => Package["apache2"],
+  }
+
+  exec {'enable apache2 rewriteEngine':
+    command => '/usr/sbin/a2enmod rewrite',
+    notify => Service['apache2']
   }
 
   file { "default":
