@@ -98,3 +98,7 @@ package { 'grunt-cli':
   provider => npm
 }
 
+# Java
+class { 'java':
+  distribution => 'jre'
+}

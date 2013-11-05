@@ -4,6 +4,8 @@ FORGE
     dhoppe/vim (0.0.11)
     maestrodev/wget (1.2.2)
     puppetlabs/git (0.0.3)
+    puppetlabs/java (1.0.1)
+      puppetlabs/stdlib (>= 0.1.6)
     puppetlabs/mysql (2.0.1)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/stdlib (4.1.0)
@@ -16,6 +18,7 @@ FORGE
 DEPENDENCIES
   dhoppe/vim (= 0.0.11)
   puppetlabs/git (= 0.0.3)
+  puppetlabs/java (= 1.0.1)
   puppetlabs/mysql (= 2.0.1)
   willdurand/composer (= 0.0.5)
   willdurand/nodejs (= 1.5.1)

@@ -12,6 +12,8 @@ mod 'puppetlabs/mysql', '2.0.1'
 
 mod 'willdurand/nodejs', '1.5.1'
 
+mod 'puppetlabs/java', '1.0.1'
+
 # mod 'ntp',
 #   :git => 'git://github.com/puppetlabs/puppetlabs-ntp.git'
 
