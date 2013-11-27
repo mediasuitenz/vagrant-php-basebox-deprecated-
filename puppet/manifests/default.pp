@@ -92,6 +92,9 @@ class { 'nodejs':
 exec { 'add nodemodules to path':
   command => '/bin/bash -c \'echo "export PATH=$PATH:/usr/local/node/node-v0.10.15/bin" >> /home/vagrant/.bashrc\'',
 }
+exec { 'chown local dir':
+  command => '/bin/chown -R vagrant /usr/local',
+}
 
 # Install grunt globally
 package { 'grunt-cli':
