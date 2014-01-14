@@ -11,10 +11,10 @@ Perform the following commands to
 - ```git pull origin master``` to get any changes
 - ```vagrant destroy```
 - ```vagrant up```
-- ```vagrant provision``` (may need to try this several times)
+- ```vagrant provision``` (try this several times if it fails for some reason)
 - ```rm vagrant-php-basebox.box``` (only necessary if this file is present)
-- ```scripts/package```
-- ```scripts/add_box_locally```
+- ```scripts/package``` (exports the provisioned vm into the file vagrant-php-basebox.box)
+- ```scripts/add_box_locally``` (adds vagrant-php-basebox.box to the vagrant registry)
 
 Once that has all completed you will have a new version of the php base box available globally
 for use in vagrant projects. Edit the Vagrantfile for your project to set the base box.
