@@ -22,10 +22,15 @@ file {'/var/www/vhosts':
 }
 
 include apache2
-
 include php5
 include composer
 
+# module installed via
+# https://forge.puppetlabs.com/fsalum/redis
+# with the commands
+# v ssh
+# puppet module install --modulepath /vagrant/puppet/modules fsalum/redis
+class { 'redis': }
 
 # Database
 class {'mysql::server':
