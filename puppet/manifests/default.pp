@@ -110,3 +110,12 @@ package { 'grunt-cli':
 class { 'java':
   distribution => 'jre'
 }
+
+# On ssh login cd to /vagrant
+file { '/home/vagrant/.bash_login':
+  ensure  => 'file',
+  path    => '/home/vagrant/.bash_login',
+  content => "cd /vagrant\n",
+  owner   => 'vagrant',
+  group   => 'vagrant'
+}
